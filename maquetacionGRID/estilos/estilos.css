@@ -1,0 +1,145 @@
+/*Aplico la propiedad de border-box*/
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+/* RESETEO LIMITADO DE PROPIEDADES margen 0*/
+body,
+header,
+nav,
+main,
+footer,
+section {
+    margin: 0px;
+}
+
+body {
+    background-color: cyan;
+    display: grid;
+    font-size: 1vw;
+    margin: 20px auto;
+    width: 90%;
+}
+
+/*Estilo de los enlaces de la página*/
+a:link {
+    text-decoration: none;
+    color: darkmagenta;
+}
+
+a:visited {
+    color: darkorange;
+}
+
+/* Estilo del header */
+
+header {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+}
+
+/* Estilos del main */
+main {
+    background-color: cadetblue;
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: 200 px 200px;
+}
+
+figure {
+    background-color: antiquewhite;
+    border: 1px solid black;
+    text-align: center;
+    width: 45%;
+}
+
+img {
+    width: 80%;
+    padding: 2%;
+}
+
+#menu li {
+    list-style: none;
+    padding: 1%;
+}
+
+/* Agrupación de las filas y columnas con GRID del main */
+
+nav {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#figura1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#figura2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#figura3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#figura4 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#figura5 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+/* Estilos del footer */
+
+footer {
+    background-color: chartreuse;
+    display:grid;
+    grid-template-columns: repeat(3, 33%);
+    margin-top: 8%;
+}
+
+address li {
+    list-style: none;
+}
+
+/* Agrupación de las filas y columnas con GRID del footer */
+
+#address {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#parrafo {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#iconos {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+/*Pseudoselectores del footer*/
+.youtube:hover {
+    color: red;
+}
+
+.facebook:hover {
+    color: cornflowerblue;
+}
+
+.link:hover {
+    color: green;
+}
